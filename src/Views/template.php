@@ -20,8 +20,6 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
                 <li><a href="/write-article" class="nav-link px-2 text-white">Write article</a></li>
-                <li><a href="/api/posts" class="nav-link px-2 text-white" target="_blank">Post API</a></li>
-                <li><a href="/api/comments" class="nav-link px-2 text-white" target="_blank">Comments API</a></li>
                 <li><a href="/userlist" class="nav-link px-2 text-white">User List</a></li>
             </ul>
 

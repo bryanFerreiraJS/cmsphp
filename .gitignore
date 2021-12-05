@@ -142,4 +142,5 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
+database/
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+all,visualstudiocode,macos

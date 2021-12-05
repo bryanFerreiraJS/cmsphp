@@ -6,17 +6,21 @@ services:
             context: .
             dockerfile: Dockerfile
         ports:
-            - 5555:80
+            - 3000:80
         volumes:
             - ./src:/var/www/html
 
     db:
         image: mariadb
         restart: always
+        command: --init-file /var/init.sql
         volumes:
             - ./database:/var/lib/mysql
+            - ./init.sql:/var/init.sql
         environment:
-            MYSQL_ROOT_PASSWORD: example
+            MYSQL_ROOT_USER: root
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: cmsphp
 
     phpmyadmin:
         image: phpmyadmin
